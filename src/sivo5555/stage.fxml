@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sivo5555.Controller">
+   <children>
+      <AnchorPane prefHeight="270.0" prefWidth="570.0">
+         <children>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ввод цепочки:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="inputField" layoutX="14.0" layoutY="42.0" prefHeight="25.0" prefWidth="230.0" />
+            <Button layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#onEnterBut" prefWidth="83.0" text="Ввод" />
+            <Text layoutX="259.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результат:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Как ввести цепную дробь:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[a0;a1,...,an,(b1;...;bn)] или [a0;a1,...,an)],&#10;где&#10;ai - целое число при i = 0&#10;ai - натуральное число i = 1...n" />
+            <TextArea fx:id="resultArea" layoutX="259.0" layoutY="42.0" prefHeight="200.0" prefWidth="280.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
